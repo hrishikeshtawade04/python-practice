@@ -32,3 +32,11 @@ def sum(a=0, *b): # *b is tuple. Means multiple values
 sum(5,6,7) 
 sum()
 
+# 5. Keyworded variable length arguments
+def person(name, **data): # **data is dictionary. Means multiple values for a specific key
+    print(name)
+    for key, value in data.items(): # you can also call **data as **kwargs
+        print(key, value)
+
+person('John', age=30, city='New York', phone=1234567890)
+person('John', age=30, place='New York')
