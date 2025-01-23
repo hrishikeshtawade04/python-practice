@@ -37,5 +37,18 @@ print(id(lst))
 updateList(lst)
 print(lst)
 
+# Get even and odd list
+def getEvenOdd(lst):
+    even = []
+    odd = []
+    for i in lst:
+        if i % 2 == 0:
+            even.append(i)
+        else:
+            odd.append(i)
+    return even, odd
 
+lst = [10, 20, 25, 30, 35, 40]
+even, odd = getEvenOdd(lst)
+print("Even List: {} and Odd : {}".format(even, odd))
 
