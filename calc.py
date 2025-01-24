@@ -9,3 +9,8 @@ def mul(a,b):
 
 def div(a,b):
     return a/b
+
+
+if __name__ == "__main__":
+    print("Running cal file")
+    
